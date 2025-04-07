@@ -5,7 +5,13 @@
 //         console.log("Video play failed:", error);
 //     });
 // });
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({
+    // Enable ScrollTrigger to update on mobile resize
+    autoRefreshEvents: "DOMContentLoaded, load, resize"
+  });
 
+  
 document.querySelectorAll('a').forEach(anchor => {
     anchor.addEventListener('click', function () {
       const target = document.querySelector(this.getAttribute('href'));
