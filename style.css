@@ -37,7 +37,7 @@ body::selection{
     pointer-events: none;
 }
 a, button, input, textarea, select {
-    cursor: auto;
+    cursor: pointer;
 }
 nav i{
     display: none;
@@ -582,11 +582,13 @@ background-clip: text;
     align-items: center;
     gap: 20px;
     position: absolute;
+    z-index: 100;
     top: 500px;
     margin-top: 60px;
     /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
     background-color: rgba(255, 255, 255, 0.345);
     border-radius: 20px;
+    
 }
 .social a:hover{
     transform: scale(1.1);
